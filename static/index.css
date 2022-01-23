@@ -46,6 +46,10 @@ main, nav, #wallet {
     margin: 14px 0;
 }
 
+#wallet-address {
+    overflow-wrap: anywhere;
+}
+
 #dog-img {
     max-width: 480px;
     width: 100%;
