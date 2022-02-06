@@ -23,7 +23,7 @@ domain, without any additional terms or conditions.
 [1]: https://paemuri.com
 [2]: ./LICENSE
 
-[badge-1-img]: https://img.shields.io/github/license/paemuri/www?style=flat-square
-[badge-1-link]: https://github.com/paemuri/www/blob/master/LICENSE
-[badge-2-img]: https://img.shields.io/badge/code_style-standard-brightgreen?style=flat-square
+[badge-1-img]: https://img.shields.io/badge/license-Unlicense-green?style=flat-square
+[badge-1-link]: ./LICENSE
+[badge-2-img]: https://img.shields.io/badge/code_style-standard-green?style=flat-square
 [badge-2-link]: https://standardjs.com
