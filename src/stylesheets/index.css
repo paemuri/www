@@ -1,6 +1,24 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg: #fdf4c1;
+        --text: #282828;
+        --highlighted-accent: #79740e;
+        --dimmed-accent: #b8bb26;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #282828;
+        --text: #fdf4c1;
+        --highlighted-accent: #b8bb26;
+        --db8bb26immed-accent: #79740e;
+    }
+}
+
 * {
-    background: #282828;
-    color: #fdf4c1;
+    background: var(--bg);
+    color: var(--text);
     font-family: 'Fira Mono', monospace;
 }
 
@@ -32,7 +50,7 @@ h2 {
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     line-height: 1;
-    color: #af3a03;
+    color: var(--highlighted-accent);
 }
 
 p {
@@ -40,7 +58,7 @@ p {
 }
 
 a:hover {
-    background-color: #79740e;
+    background-color: var(--dimmed-accent);
 }
 
 main, nav, #wallet {
