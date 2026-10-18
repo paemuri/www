@@ -1,10 +1,8 @@
-@media (prefers-color-scheme: light) {
-    :root {
-        --bg: #fdf4c1;
-        --text: #282828;
-        --highlighted-accent: #79740e;
-        --dimmed-accent: #b8bb26;
-    }
+:root {
+    --bg: #fdf4c1;
+    --text: #282828;
+    --highlighted-accent: #79740e;
+    --dimmed-accent: #b8bb26;
 }
 
 @media (prefers-color-scheme: dark) {
