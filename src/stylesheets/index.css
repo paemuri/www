@@ -85,6 +85,10 @@ main, nav, #wallet {
     pointer-events: none;
 }
 
+.visible {
+    opacity: 1;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .visible {
         transition: opacity 0.2s;
