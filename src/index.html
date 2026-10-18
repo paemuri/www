@@ -1,97 +1,121 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Rafael Zichia">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" href="/static/pfp.jpg">
-        <link
-          rel="stylesheet"
-          href="https://code.cdn.mozilla.net/fonts/fira.css"
-          integrity="sha512-+1KxIb9PlTfR4rUzuEswDvY4Nx+VfsoQxZstss5OUqZMs+bHl9/YPTS09vvC80XVtu6cqslNovpRXyap2gi6WQ=="
-          crossorigin="anonymous"
-        >
-        <link rel="stylesheet" href="/stylesheets/index.css">
-        <title>Rafael Zichia</title>
-    </head>
-    <body>
-        <div id="path">
-            &#x276F;
-            <a href="/">home</a>
-        </div>
-        <main>
-            <h1>Rafael Zichia</h1>
-            <p><i>/hafa'ɛw 'zixja/</i></p>
-            <p>
-                Hello, my name is Rafael, I'm a programmer originally from Brazil. I'm interested
-                in many things, including computing science, linguistics, free software,
-                individualism, free market capitalism, archery, firearms, and martiala arts.
-            </p>
-            <p>Contact me at rafael (at) paemuri (dot) com.</p>
-            <p>
-                Check out the <a href="gemini://gem.paemuri.com">Gemini capsule</a> version of
-                this site.
-            </p>
-        </main>
-        <nav>
-            <h2>Sitemap</h2>
-            <p>
-                <a href="/static/resume.pdf">resume</a>
-                <span> - </span>
-                <a href="/cool">cool</a>
-                <span> - </span>
-                <a href="/uses">uses</a>
-            </p>
-        </nav>
-        <div>
-            <h2>External links</h2>
-            <p>
-                <a href="https://sr.ht/~paemuri">git projects</a>
-                <span> - </span>
-                <a href="https://linkedin.com/in/paemuri">linkedin</a>
-            </p>
-            <p>
-                <a href="https://www.last.fm/user/paemuri">last.fm</a>
-                <span> - </span>
-                <a href="https://letterboxd.com/paemuri">letterboxd</a>
-                <span> - </span>
-                <a href="https://www.goodreads.com/paemuri">goodreads</a>
-                <span> - </span>
-                <a href="https://myanimelist.net/profile/paemuri">myanimelist</a>
-            </p>
-            <p>
-                <a href="https://steamcommunity.com/id/paemuri">steam</a>
-                <span> - </span>
-                <a href="https://www.gog.com/u/paemuri">gog</a>
-                <span> - </span>
-                <a href="https://subeta.net/users/paemuri">subeta</a>
-                <span> - </span>
-                <a href="https://www.neopets.com/userlookup.phtml?user=rafazilla">neopets</a>
-            </p>
-            <p>
-                <a href="javascript:;" data-w="bc1qv5qy2xmx50q730p2tzqakwwyqryl0mr27z506q">bitcoin</a>
-                <span> - </span>
-                <a href="javascript:;" data-w="43LrGX9UQ4k7Pqfay4KuvmPtYj37ALdVeBtphghG5ADA5kd6aewNPrmKwKcC4wcMx4WdKZLkSERtFhsSyd4uuFVrP7NNvFw">monero</a>
-            </p>
-        </div>
-        <div class="invisible" id="wallet">
-            <div id="qr-code"></div>
-            <p>
-                <a id="wallet-address" href="javascript:;"></a>
-                <span class="invisible" id="clipboard-tooltip"> copied</span>
-            </p>
-        </div>
-        <div>
-            <h2>Webrings</h2>
-            <p>
-                <a href="https://hotlinewebring.club">hotline webring</a>
-                <span> - </span>
-                <a href="https://hotlinewebring.club/paemuri/previous">prev</a>
-                <a href="https://hotlinewebring.club/paemuri/next">next</a>
-            </p>
-        </div>
-        <script defer src="/lib/qrcodejs/qrcode.min.js"></script>
-        <script defer src="/scripts/wallet.js"></script>
-    </body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="author" content="Rafael Zichia">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" href="/static/pfp.jpg">
+		<link rel="stylesheet"
+		      href="https://code.cdn.mozilla.net/fonts/fira.css"
+		      integrity="sha512-+1KxIb9PlTfR4rUzuEswDvY4Nx+VfsoQxZstss5OUqZMs+bHl9/YPTS09vvC80XVtu6cqslNovpRXyap2gi6WQ=="
+		      crossorigin="anonymous"
+		>
+		<link rel="stylesheet" href="/stylesheets/index.css">
+		<title>Rafael Zichia</title>
+	</head>
+	<body>
+		<div id="path">
+			&#x276F;
+			<a href="/">home</a>
+		</div>
+		<main>
+			<h1>Rafael Zichia</h1>
+			<p><i>/hafa'ɛw 'zixja/</i></p>
+			<p>
+				Hello, my name is Rafael, I'm a programmer originally from Brazil. I'm interested
+				in many things, including computing science, linguistics, free software,
+				individualism, free market capitalism, archery, firearms, and martiala arts.
+			</p>
+			<p>Contact me at rafael (at) paemuri (dot) com.</p>
+			<p>
+				Check out the <a href="gemini://gem.paemuri.com">Gemini capsule</a>
+				version of
+				this site.
+			</p>
+		</main>
+		<nav>
+			<h2>Sitemap</h2>
+			<p>
+				<a href="/static/resume.pdf">resume</a>
+				<span>
+					-
+				</span>
+				<a href="/cool">cool</a>
+				<span>
+					-
+				</span>
+				<a href="/uses">uses</a>
+			</p>
+		</nav>
+		<div>
+			<h2>External links</h2>
+			<p>
+				<a href="https://sr.ht/~paemuri">git projects</a>
+				<span>
+					-
+				</span>
+				<a href="https://linkedin.com/in/paemuri">linkedin</a>
+			</p>
+			<p>
+				<a href="https://www.last.fm/user/paemuri">last.fm</a>
+				<span>
+					-
+				</span>
+				<a href="https://letterboxd.com/paemuri">letterboxd</a>
+				<span>
+					-
+				</span>
+				<a href="https://www.goodreads.com/paemuri">goodreads</a>
+				<span>
+					-
+				</span>
+				<a href="https://myanimelist.net/profile/paemuri">myanimelist</a>
+			</p>
+			<p>
+				<a href="https://steamcommunity.com/id/paemuri">steam</a>
+				<span>
+					-
+				</span>
+				<a href="https://www.gog.com/u/paemuri">gog</a>
+				<span>
+					-
+				</span>
+				<a href="https://subeta.net/users/paemuri">subeta</a>
+				<span>
+					-
+				</span>
+				<a href="https://www.neopets.com/userlookup.phtml?user=rafazilla">neopets</a>
+			</p>
+			<p>
+				<a href="javascript:;" data-w="bc1qv5qy2xmx50q730p2tzqakwwyqryl0mr27z506q">bitcoin</a>
+				<span>
+					-
+				</span>
+				<a href="javascript:;" data-w="43LrGX9UQ4k7Pqfay4KuvmPtYj37ALdVeBtphghG5ADA5kd6aewNPrmKwKcC4wcMx4WdKZLkSERtFhsSyd4uuFVrP7NNvFw">monero</a>
+			</p>
+		</div>
+		<div class="invisible" id="wallet">
+			<div id="qr-code"></div>
+			<p>
+				<a id="wallet-address" href="javascript:;"></a>
+				<span class="invisible" id="clipboard-tooltip">
+					copied
+				</span>
+			</p>
+		</div>
+		<div>
+			<h2>Webrings</h2>
+			<p>
+				<a href="https://hotlinewebring.club">hotline webring</a>
+				<span>
+					-
+				</span>
+				<a href="https://hotlinewebring.club/paemuri/previous">prev</a>
+				<a href="https://hotlinewebring.club/paemuri/next">next</a>
+			</p>
+		</div>
+		<script defer src="/lib/qrcodejs/qrcode.min.js"></script>
+		<script defer src="/scripts/wallet.js"></script>
+	</body>
 </html>
