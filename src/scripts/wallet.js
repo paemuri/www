@@ -2,10 +2,10 @@
 
 (() => {
 
-    const outputContainer = window['wallet'] || document.getElementById('wallet')
-    const walletOutput = window['wallet-address'] || document.getElementById('wallet-address')
-    const qrCodeOutput = window['qr-code'] || document.getElementById('qr-code')
-    const tooltip = window['clipboard-tooltip'] || document.getElementById('clipboard-tooltip')
+    const outputContainer = document.getElementById('wallet')
+    const walletOutput = document.getElementById('wallet-address')
+    const qrCodeOutput = document.getElementById('qr-code')
+    const tooltip = document.getElementById('clipboard-tooltip')
 
     const qrCodeGenerator = new QRCode(qrCodeOutput, {
         text: '',
