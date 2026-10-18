@@ -58,7 +58,8 @@ p {
     margin: 7px 0;
 }
 
-a:hover {
+a:hover,
+a:focus-visible {
     background-color: var(--dimmed-accent);
 }
 
@@ -87,6 +88,8 @@ main, nav, #wallet {
     pointer-events: none;
 }
 
-.visible {
-    transition: opacity 0.2s;
+@media (prefers-reduced-motion: no-preference) {
+    .visible {
+        transition: opacity 0.2s;
+    }
 }

@@ -43,6 +43,7 @@
 
         outputContainer.classList.remove('invisible')
         outputContainer.classList.add('visible')
+        outputContainer.inert = false
 
         const name = event.target.innerText
         const wallet = event.target.getAttribute('data-w')
