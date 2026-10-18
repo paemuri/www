@@ -11,9 +11,6 @@ This project code is in the public domain. See the [LICENSE file][2].
 
 The `lib/` folder contains external libraries with their own licenses.
 
-The `static/dog.png` file contains its own license (CC BY-SA 3.0)
-explained in `dog.html`.
-
 ### Contribution
 
 Unless you explicitly state otherwise, any contribution intentionally

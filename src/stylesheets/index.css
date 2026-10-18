@@ -78,11 +78,6 @@ main, nav, #wallet {
     overflow-wrap: anywhere;
 }
 
-#dog-img {
-    max-width: 480px;
-    width: 100%;
-}
-
 .invisible {
     height: 0;
     width: 0;
