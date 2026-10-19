@@ -64,7 +64,7 @@ main, nav, #wallet {
     margin-top: 21px;
 }
 
-#main__two-columns {
+#home-grid {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     column-gap: 36px;
@@ -72,12 +72,12 @@ main, nav, #wallet {
     align-items: start;
 }
 
-#main__two-columns main {
+#home-grid main {
     margin-top: 0;
 }
 
 @media (max-width: 800px) {
-    #main__two-columns {
+    #home-grid {
         grid-template-columns: 1fr;
         max-width: 480px;
     }
