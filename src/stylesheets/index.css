@@ -1,4 +1,6 @@
 :root {
+    color-scheme: light dark;
+
     /* colors */
     --bg: #fdf4c1;
     --text: #282828;
