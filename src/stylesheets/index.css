@@ -31,7 +31,7 @@ body {
     }
 }
 
-main {
+main, #pfp {
     max-width: 480px;
 }
 
@@ -62,6 +62,33 @@ a:focus-visible {
 
 main, nav, #wallet {
     margin-top: 21px;
+}
+
+#main__two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    column-gap: 36px;
+    max-width: 996px;
+    align-items: start;
+}
+
+#main__two-columns main {
+    margin-top: 0;
+}
+
+@media (max-width: 800px) {
+    #main__two-columns {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+    }
+}
+
+#pfp {
+    width: 100%;
+    height: auto;
+    margin-top: 14px; /* Match h1's `margin-top`. */
+    box-sizing: border-box;
+    border: 5px solid var(--highlighted-accent);
 }
 
 #path {
