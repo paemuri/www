@@ -64,8 +64,19 @@ p {
     margin: calc(var(--space) / 2) 0;
 }
 
+button {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 a:hover,
-a:focus-visible {
+a:focus-visible,
+button:hover,
+button:focus-visible {
     background-color: var(--dimmed-accent);
 }
 
@@ -112,6 +123,7 @@ main, nav, #wallet {
 
 #wallet-address {
     overflow-wrap: anywhere;
+    text-align: left;
 }
 
 .invisible {
