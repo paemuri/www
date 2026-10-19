@@ -1,8 +1,15 @@
 :root {
+    /* colors */
     --bg: #fdf4c1;
     --text: #282828;
     --highlighted-accent: #79740e;
     --dimmed-accent: #b8bb26;
+
+    /* layout sizing */
+    --measure: 480px;
+    --gutter: 36px;
+    --rhythm: 21px;
+    --space: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,26 +29,26 @@
 
 body {
     margin-top: 1px;
-    padding: 0 36px;
+    padding: 0 var(--gutter);
 }
 
 @media (max-width: 600px) {
     body {
-        padding: 0 14px;
+        padding: 0 var(--space);
     }
 }
 
-main, #pfp {
-    max-width: 480px;
+main {
+    max-width: var(--measure);
 }
 
 h1 {
-    margin: 14px 0;
+    margin: var(--space) 0;
     font-size: 49px;
 }
 
 h2 {
-    margin: 14px 0;
+    margin: var(--space) 0;
     font-size: 28px;
 }
 
@@ -52,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    margin: 7px 0;
+    margin: calc(var(--space) / 2) 0;
 }
 
 a:hover,
@@ -61,14 +68,16 @@ a:focus-visible {
 }
 
 main, nav, #wallet {
-    margin-top: 21px;
+    margin-top: var(--rhythm);
 }
 
 #home-grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    column-gap: 36px;
-    max-width: 996px;
+    grid-template-columns: 3fr 4fr;
+    column-gap: var(--gutter);
+    /* 1.75 means (1 * measure) for the second column (4fr), and (.75 * measure)
+     * for the first column (3fr). */
+    max-width: calc(1.75 * var(--measure) + var(--gutter));
     align-items: start;
 }
 
@@ -79,14 +88,14 @@ main, nav, #wallet {
 @media (max-width: 800px) {
     #home-grid {
         grid-template-columns: 1fr;
-        max-width: 480px;
+        max-width: var(--measure);
     }
 }
 
 #pfp {
     width: 100%;
     height: auto;
-    margin-top: 14px; /* Match h1's `margin-top`. */
+    margin: var(--space) 0; /* Match h1's margin. */
     box-sizing: border-box;
     border: 5px solid var(--highlighted-accent);
 }
@@ -96,7 +105,7 @@ main, nav, #wallet {
 }
 
 #qr-code {
-    margin: 14px 0;
+    margin: var(--space) 0;
 }
 
 #wallet-address {
