@@ -1,0 +1,29 @@
+#!/bin/sh
+set -eu
+
+# Regenerate the wallet QR codes from the addresses in HTML. Requires qrencode.
+
+index=src/index.html
+
+wallet() {
+  awk -v name="$1" -F'"' '
+    /data-w="/ { w = $2 }
+    index($0, ">" name "</button>") { print w; exit }
+  ' "$index"
+}
+
+for name in bitcoin monero; do
+  address=$(wallet "$name")
+  if [ -z "$address" ]; then
+    echo "gen-qr: could not find the $name address in $index" >&2
+    exit 1
+  fi
+  qrencode \
+    --type=SVG \
+    --size=8 \
+    --margin=4 \
+    --foreground=282828 \
+    --background=fdf4c1 \
+    --output="static/qr-$name.svg" \
+    "$name:$address"
+done

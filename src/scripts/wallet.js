@@ -1,5 +1,3 @@
-/* global QRCode */
-
 (() => {
 
     const outputContainer = document.getElementById('wallet')
@@ -7,13 +5,8 @@
     const qrCodeOutput = document.getElementById('qr-code')
     const tooltip = document.getElementById('clipboard-tooltip')
 
-    const qrCodeGenerator = new QRCode(qrCodeOutput, {
-        text: '',
-        width: 210,
-        height: 210,
-        colorLight: '#fdf4c1',
-        colorDark: '#282828'
-    })
+    const qrCodeImage = document.createElement('img')
+    qrCodeOutput.appendChild(qrCodeImage)
 
     const showTooltip = () => {
         tooltip.classList.remove('invisible')
@@ -41,14 +34,17 @@
 
     const qrCodeListener = event => {
 
+        const name = event.target.innerText
+        const wallet = event.target.getAttribute('data-w')
+        const imagePath = event.target.getAttribute('data-qr')
+
+        walletOutput.innerText = wallet
+        qrCodeImage.src = imagePath
+        qrCodeImage.alt = `QR code for the ${name} address`
+
         outputContainer.classList.remove('invisible')
         outputContainer.classList.add('visible')
         outputContainer.inert = false
-
-        const name = event.target.innerText
-        const wallet = event.target.getAttribute('data-w')
-        walletOutput.innerText = wallet
-        qrCodeGenerator.makeCode(`${name}:${wallet}`)
     }
 
     const btns = document.querySelectorAll('[data-w]')

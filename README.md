@@ -9,8 +9,6 @@ My personal website, running @ [paemuri.com][1]!
 
 This project code is in the public domain. See the [LICENSE file][2].
 
-The `lib/` folder contains external libraries with their own licenses.
-
 ### Contribution
 
 Unless you explicitly state otherwise, any contribution intentionally

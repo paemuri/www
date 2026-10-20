@@ -121,6 +121,12 @@ main, nav, #wallet {
     margin: var(--space) 0;
 }
 
+#qr-code img {
+    display: block;
+    width: 210px;
+    height: auto;
+}
+
 #wallet-address {
     overflow-wrap: anywhere;
     text-align: left;
