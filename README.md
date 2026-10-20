@@ -5,20 +5,40 @@
 
 My personal website, running @ [paemuri.com][1]!
 
-## License
+## Tools
 
-This project code is in the public domain. See the [LICENSE file][2].
+### Build
 
-### Contribution
+The source code is ready to be deployed. The only thing that might need manual
+intervention is the QR code generation. If a wallet address changes in the HTML
+files, you need to run `./gen-qr` for the SVG images of the QR codes to be
+updated. The script requires `qrencode` on your machine.
 
-Unless you explicitly state otherwise, any contribution intentionally
-submitted for inclusion in the work by you shall be in the public
-domain, without any additional terms or conditions.
+### Deploy
+
+Run `./deploy`. Requires a previous `git secret reveal`.
+
+## Source code
+
+The main repository is on [SourceHut][source-srht]. A mirror exists on
+[GitHub][source-github] for convenience, but it might occasionally be outdated.
+
+### License and contribution
+
+This project's code is in the public domain. See the
+[LICENSE file][source-license].
+
+Unless you explicitly state otherwise, any contribution intentionally submitted
+for inclusion in the work by you shall be in the public domain, without any
+additional terms or conditions.
 
 [1]: https://paemuri.com
-[2]: ./LICENSE
 
 [badge-1-img]: https://img.shields.io/badge/license-Unlicense-green?style=flat-square
 [badge-1-link]: ./LICENSE
 [badge-2-img]: https://img.shields.io/badge/code_style-standard-green?style=flat-square
 [badge-2-link]: https://standardjs.com
+
+[source-srht]: https://git.sr.ht/~paemuri/www
+[source-github]: https://github.com/paemuri/www
+[source-license]: ./LICENSE
