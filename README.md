@@ -7,12 +7,17 @@ My personal website, running @ [paemuri.com][1]!
 
 ## Tools
 
+### Lint/Format
+
+Run `./format`. It always writes the changes, never checks only. Requires
+`standard` and `superhtml`.
+
 ### Build
 
 The source code is ready to be deployed. The only thing that might need manual
 intervention is the QR code generation. If a wallet address changes in the HTML
 files, you need to run `./gen-qr` for the SVG images of the QR codes to be
-updated. The script requires `qrencode` on your machine.
+updated. Requires `qrencode` on your machine.
 
 ### Deploy
 
