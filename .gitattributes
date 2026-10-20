@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+# Binary assets
+*.gif binary
+*.jpg binary
+*.jpeg binary
+*.png binary
+*.pdf binary
+*.secret binary
+*.gpg binary
+*.kbx binary
+
+# Generated QR codes
+static/qr-*.svg -diff linguist-generated
