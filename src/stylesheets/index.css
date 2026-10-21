@@ -1,152 +1,152 @@
 :root {
-    color-scheme: light dark;
+  color-scheme: light dark;
 
-    /* colors */
-    --bg: #fdf4c1;
-    --text: #282828;
-    --highlighted-accent: #79740e;
-    --dimmed-accent: #b8bb26;
+  /* colors */
+  --bg: #fdf4c1;
+  --text: #282828;
+  --highlighted-accent: #79740e;
+  --dimmed-accent: #b8bb26;
 
-    /* layout sizing */
-    --measure: 480px;
-    --gutter: 36px;
-    --rhythm: 21px;
-    --space: 14px;
+  /* layout sizing */
+  --measure: 480px;
+  --gutter: 36px;
+  --rhythm: 21px;
+  --space: 14px;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        --bg: #282828;
-        --text: #fdf4c1;
-        --highlighted-accent: #b8bb26;
-        --dimmed-accent: #79740e;
-    }
+  :root {
+    --bg: #282828;
+    --text: #fdf4c1;
+    --highlighted-accent: #b8bb26;
+    --dimmed-accent: #79740e;
+  }
 }
 
 * {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Fira Mono', monospace;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Fira Mono', monospace;
 }
 
 body {
-    margin-top: 1px;
-    padding: 0 var(--gutter);
+  margin-top: 1px;
+  padding: 0 var(--gutter);
 }
 
 @media (max-width: 600px) {
-    body {
-        padding: 0 var(--space);
-    }
+  body {
+    padding: 0 var(--space);
+  }
 }
 
 main {
-    max-width: var(--measure);
+  max-width: var(--measure);
 }
 
 h1 {
-    margin: var(--space) 0;
-    font-size: 49px;
+  margin: var(--space) 0;
+  font-size: 49px;
 }
 
 h2 {
-    margin: var(--space) 0;
-    font-size: 28px;
+  margin: var(--space) 0;
+  font-size: 28px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-    line-height: 1;
-    color: var(--highlighted-accent);
+  font-weight: normal;
+  line-height: 1;
+  color: var(--highlighted-accent);
 }
 
 p {
-    margin: calc(var(--space) / 2) 0;
+  margin: calc(var(--space) / 2) 0;
 }
 
 button {
-    appearance: none;
-    border: 0;
-    padding: 0;
-    font: inherit;
-    text-decoration: underline;
-    cursor: pointer;
+  appearance: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 a:hover,
 a:focus-visible,
 button:hover,
 button:focus-visible {
-    background-color: var(--dimmed-accent);
+  background-color: var(--dimmed-accent);
 }
 
 main, nav, #wallet {
-    margin-top: var(--rhythm);
+  margin-top: var(--rhythm);
 }
 
 #home-grid {
-    display: grid;
-    grid-template-columns: 3fr 4fr;
-    column-gap: var(--gutter);
-    /* 1.75 means (1 * measure) for the second column (4fr), and (.75 * measure)
-     * for the first column (3fr). */
-    max-width: calc(1.75 * var(--measure) + var(--gutter));
-    align-items: start;
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  column-gap: var(--gutter);
+  /* 1.75 means (1 * measure) for the second column (4fr), and (.75 * measure)
+   * for the first column (3fr). */
+  max-width: calc(1.75 * var(--measure) + var(--gutter));
+  align-items: start;
 }
 
 #home-grid main {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 @media (max-width: 800px) {
-    #home-grid {
-        grid-template-columns: 1fr;
-        max-width: var(--measure);
-    }
+  #home-grid {
+    grid-template-columns: 1fr;
+    max-width: var(--measure);
+  }
 }
 
 #pfp {
-    width: 100%;
-    height: auto;
-    margin: var(--space) 0; /* Match h1's margin. */
-    box-sizing: border-box;
-    border: 5px solid var(--highlighted-accent);
+  width: 100%;
+  height: auto;
+  margin: var(--space) 0; /* Match h1's margin. */
+  box-sizing: border-box;
+  border: 5px solid var(--highlighted-accent);
 }
 
 #path {
-    height: 20px;
+  height: 20px;
 }
 
 #qr-code {
-    margin: var(--space) 0;
+  margin: var(--space) 0;
 }
 
 #qr-code img {
-    display: block;
-    width: 210px;
-    height: auto;
+  display: block;
+  width: 210px;
+  height: auto;
 }
 
 #wallet-address {
-    overflow-wrap: anywhere;
-    text-align: left;
+  overflow-wrap: anywhere;
+  text-align: left;
 }
 
 .invisible {
-    height: 0;
-    width: 0;
-    margin: 0;
-    padding: 0;
-    opacity: 0;
-    pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .visible {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .visible {
-        transition: opacity 0.2s;
-    }
+  .visible {
+    transition: opacity 0.2s;
+  }
 }
