@@ -5,6 +5,8 @@ set -eu
 
 index=src/index.html
 
+cd "$(dirname "$0")"
+
 wallet() {
   awk -v name="$1" -F'"' '
     /data-w="/ { w = $2 }

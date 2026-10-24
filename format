@@ -1,5 +1,7 @@
 #!/bin/sh
 set -eu
 
+cd "$(dirname "$0")"
+
 superhtml fmt src
 standard --fix src
