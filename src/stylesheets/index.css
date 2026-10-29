@@ -113,6 +113,21 @@ main, nav, #wallet {
   border: 5px solid var(--highlighted-accent);
 }
 
+#badges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space);
+  margin-bottom: var(--space);
+}
+
+#badges img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+}
+
 #path {
   height: 20px;
 }
