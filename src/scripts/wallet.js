@@ -48,4 +48,18 @@
   for (const btn of btns) {
     btn.addEventListener('click', qrCodeListener)
   }
+
+  const preloadQrCodes = () => {
+    for (const btn of btns) {
+      const image = document.createElement('img')
+      image.src = btn.getAttribute('data-qr')
+      image.decode?.().catch(() => {})
+    }
+  }
+
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(preloadQrCodes, { timeout: 2000 })
+  } else {
+    window.addEventListener('load', preloadQrCodes, { once: true })
+  }
 })()

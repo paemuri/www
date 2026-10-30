@@ -80,7 +80,7 @@ button:focus-visible {
   background-color: var(--dimmed-accent);
 }
 
-main, nav, #wallet {
+main, nav, #wallet:not(.invisible) {
   margin-top: var(--rhythm);
 }
 
@@ -139,6 +139,7 @@ main, nav, #wallet {
 #qr-code img {
   display: block;
   width: 210px;
+  aspect-ratio: 1;
   height: auto;
 }
 
@@ -148,10 +149,12 @@ main, nav, #wallet {
 }
 
 .invisible {
+  position: absolute;
   height: 0;
   width: 0;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   opacity: 0;
   pointer-events: none;
 }
