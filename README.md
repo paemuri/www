@@ -36,7 +36,6 @@ All original code is licensed under the
 [GNU Affero General Public License 3.0 or later][license-code]. All original
 content and artwork are licensed under the
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International][license-content].
-`static/resume.pdf` is a copy of the resume and remains all rights reserved.
 
 Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you shall be licensed under the same license as
@@ -45,12 +44,17 @@ conditions.
 
 ### Third-party and exceptions
 
-The Fira font is loaded from Mozilla's CDN and is licensed under the SIL Open
-Font License 1.1. `static/mapple-story.gif` contains MapleStory assets © Nexon.
-The forum bling GIFs in `static/temp-public/` are third-party works. These are
-not covered by this project's licenses.
+- `static/button.gif` is from the [88x31][2] project and is covered by the
+  content license above.
+- `static/mapple-story.gif` is from the [ms-chars][3] project. The underlying
+  MapleStory assets are © Nexon and are not covered by this project's licenses.
+- `static/resume.pdf` is from the [resume][4] project and remains all rights
+  reserved.
 
 [1]: https://paemuri.com
+[2]: https://git.sr.ht/~paemuri/88x31
+[3]: https://git.sr.ht/~paemuri/ms-chars
+[4]: https://git.sr.ht/~paemuri/resume
 
 [badge-1-img]: https://img.shields.io/badge/license-AGPL--3.0--or--later-green?style=flat-square
 [badge-1-link]: ./LICENSE
